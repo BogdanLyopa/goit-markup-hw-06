@@ -256,7 +256,7 @@ header {
   margin-right: 0;
 }
 
-.activity-title {
+.activity-block{
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -264,14 +264,19 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
   background-color: rgba(47, 48, 58, 0.8);
+
+}
+
+.activity-title {
+  margin: 0;
   color: var(--white);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
+
 /* team */
 .team {
   background-color: var(--baclground-team);
@@ -375,14 +380,17 @@ header {
 .list-colum {
   flex-direction: column;
 }
-address {
+
+.street{
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+.location {
   color: var(--white);
   line-height: 1.7;
   font-style: normal;
-}
-address .location {
   margin-top: 20px;
-  margin-bottom: 9px;
+
 }
 
 .footer-contacts {
@@ -564,6 +572,7 @@ color: rgba(255, 255, 255, 0.6);
   width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
 
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -573,7 +582,7 @@ color: rgba(255, 255, 255, 0.6);
   font-size: 18px;
   line-height: 1.56;
   color: var(--white);
-  padding: 63px 24px;
+  
 }
 
 /* backdrop */
